@@ -2,7 +2,14 @@ import './App.css';
 import { useContext, useEffect } from 'react';
 import { allProductContext } from './context/allProductConetxt';
 import { instance } from './api/agent';
-import { Router, Routes } from 'react-router-dom';
+import Information from './layouts/header/Information/Information';
+import Search from './layouts/header/Search/Search';
+import Navbar from './layouts/header/Navbar/Navbar';
+import HeroCart from './components/HeroCart';
+import Footer from './layouts/footer/Footer';
+
+
+
 
 function App() {
   let {product, setProduct}=useContext(allProductContext)
@@ -20,13 +27,11 @@ function App() {
   });
   return (
     <>
-    
-    <Routes>
-      <Router>
-
-      </Router>
-    </Routes>
-    
+    <Information/>
+    <Search/>
+    <Navbar/>
+    <HeroCart/>
+    <Footer/>
     </>
   );
 }

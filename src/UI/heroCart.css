@@ -1,0 +1,48 @@
+.shopBtn{
+    height: 35px;
+    border-radius: 10px;
+    background-color: #EDA415; /*why*/
+}
+.ViewBtn{
+    height: 35px;
+    border-radius: 10px;
+}
+.heroCart{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 175px;
+}
+.heroCartLeft{
+    padding-top: 70px ;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.heroBtn{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+.shopBtn{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 10px;
+width: 130px;
+height: 51px;
+background-color: #EDA415;
+color: #FFFFFF;
+border-radius: 20px;
+border: none;
+}
+.viewBtn{
+    width: 130px;
+    height: 51px;
+    border-radius: 20px;
+left: 0px;
+top: 0px;
+background: #FFFFFF;
+box-shadow: 19px 4px 16px rgba(84, 83, 83, 0.09);
+}

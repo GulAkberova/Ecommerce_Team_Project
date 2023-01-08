@@ -1,0 +1,28 @@
+.navbarBox{
+    height: 60px;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F4F4F4;
+    font-size: 15px;
+}
+.navbarBoxLeft{
+    display: flex;
+    justify-content: space-between;
+}
+.navbarBoxRight{
+    color: #003F62;
+}
+.navbarCategories{
+    margin-left: 50px;
+}
+ul{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+ul > img{
+    padding:0 15px;
+}
+
