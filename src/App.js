@@ -1,23 +1,34 @@
-import './App.css';
-import { useContext, useEffect } from 'react';
-import { allProductContext } from './context/allProductContext';
-import { instance } from './api/agent';
-import { Route, Routes } from 'react-router-dom';
-import Footer from './layouts/footer/Footer';
+import "./App.css";
+import { useContext, useEffect } from "react";
+import { allProductContext } from "./context/allProductContext";
+import { instance } from "./api/agent";
+import { Route, Routes } from "react-router-dom";
+import Footer from "./layouts/footer/Footer";
 import agent from "./api/agent";
-import Header from './layouts/header/Header';
-import { RouterSharp } from '@mui/icons-material';
-import HomePage from './pages/HomePage/HomePage';
-import Catalog from './pages/CatalogPage/Catalog';
+import Header from "./layouts/header/Header";
+import { RouterSharp } from "@mui/icons-material";
+import HomePage from "./pages/HomePage/HomePage";
+import Catalog from "./pages/CatalogPage/Catalog";
 
 function App() {
-  let { product, setProduct } = useContext(allProductContext);
+  let { setProduct, setCategories } = useContext(allProductContext);
 
   useEffect(() => {
-    
-      agent.getAll()
+    agent
+      .getAll()
       .then((res) => {
-        console.log(res);
+        setProduct(res);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  });
+
+  useEffect(() => {
+    agent
+      .getByCategories()
+      .then((res) => {
+        setCategories(res);
       })
       .catch((err) => {
         console.log(err);
@@ -25,14 +36,12 @@ function App() {
   });
   return (
     <>
-   
-    <Header/>
-    <Routes>
-    <Route path='/' element={<HomePage/>}/>
-    <Route path='/catalog' element={<Catalog/>}/>
-
-    </Routes>
-    <Footer/>
+      <Header />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/catalog" element={<Catalog />} />
+      </Routes>
+      <Footer />
     </>
   );
 }
