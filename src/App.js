@@ -31,9 +31,6 @@ function App() {
     <Route path='/' element={<HomePage/>}/>
     <Route path='/catalog' element={<Catalog/>}/>
 
-      {/* <Route path='/product' element={<Product/>}/>
-      <Route path='/detail/:id' element={<Detail/>}/>
-      <Route path='/wishlist' element={<Wishlist/>}/> */}
     </Routes>
     <Footer/>
     </>
