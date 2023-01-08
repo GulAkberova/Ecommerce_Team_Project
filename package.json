@@ -6,9 +6,15 @@
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     "@mui/icons-material": "^5.11.0",
 >>>>>>> Zeynab
+=======
+    "@mui/icons-material": "^5.11.0",
+=======
+>>>>>>> ab043d8d7c40f5f70570dfe42f3787934e8c19bb
+>>>>>>> Zeyneb
     "@mui/material": "^5.11.3",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
