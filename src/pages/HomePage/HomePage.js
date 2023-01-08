@@ -6,10 +6,12 @@ import PersonCarusel from "../../components/PersonCarusel";
 import Spacingtech from "../../components/Spacingtech";
 import Latest from "../../components/Latest";
 import LimitCarusel from "../../components/LimitCarusel";
+import ItemsSlider from '../../components/ItemsSlider';
 function HomePage() {
   return (
     <div>
          <HeroCart/>
+         <ItemsSlider/>
          <Banner />
       <LimitCarusel/>
       <MiniBanner/>
