@@ -1,7 +1,7 @@
 import "./App.css";
 import { useContext, useEffect } from "react";
 import { allProductContext } from "./context/allProductContext";
-
+import "swiper/css/bundle";
 import { Router, Routes } from "react-router-dom";
 import Banner from "./components/Banner";
 import MiniBanner from "./components/MiniBanner";
