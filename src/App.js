@@ -1,39 +1,45 @@
-import './App.css';
-import { useContext, useEffect } from 'react';
-import { allProductContext } from './context/allProductContext';
-import { instance } from './api/agent';
-import { Route, Routes } from 'react-router-dom';
-import Footer from './layouts/footer/Footer';
+import "./App.css";
+import { useContext, useEffect } from "react";
+import { allProductContext } from "./context/allProductContext";
+import "swiper/css/bundle";
+import { Route, Routes } from "react-router-dom";
+// import Banner from "./components/Banner";
+// import MiniBanner from "./components/MiniBanner";
+// import PersonCarusel from "./components/PersonCarusel";
+// import Spacingtech from "./components/Spacingtech";
+// import Latest from "./components/Latest";
+// import LimitCarusel from "./components/LimitCarusel";
 import agent from "./api/agent";
 import Header from './layouts/header/Header';
+import Footer from './layouts/footer/Footer'
 import { RouterSharp } from '@mui/icons-material';
 import HomePage from './pages/HomePage/HomePage';
 import Catalog from './pages/CatalogPage/Catalog';
 
-  function App() {
-    let { setProduct, setCategories } = useContext(allProductContext);
-  
-    useEffect(() => {
-      agent
-        .getAll()
-        .then((res) => {
-          setProduct(res);
-        })
-        .catch((err) => {
-          console.log(err);
-        });
-    });
-  
-    useEffect(() => {
-      agent
-        .getByCategory()
-        .then((res) => {
-          setCategories(res);
-        })
-        .catch((err) => {
-          console.log(err);
-        });
-    });
+function App() {
+  let { setProduct, setCategories } = useContext(allProductContext);
+
+  useEffect(() => {
+    agent
+      .getAll()
+      .then((res) => {
+        setProduct(res);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  });
+
+  useEffect(() => {
+    agent
+      .getByCategory()
+      .then((res) => {
+        setCategories(res);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  });
   return (
     <>
    
@@ -42,9 +48,6 @@ import Catalog from './pages/CatalogPage/Catalog';
     <Route path='/' element={<HomePage/>}/>
     <Route path='/catalog' element={<Catalog/>}/>
 
-      {/* <Route path='/product' element={<Product/>}/>
-      <Route path='/detail/:id' element={<Detail/>}/>
-      <Route path='/wishlist' element={<Wishlist/>}/> */}
     </Routes>
     <Footer/>
     </>

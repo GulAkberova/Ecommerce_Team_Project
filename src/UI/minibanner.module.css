@@ -11,13 +11,13 @@
 }
 .minidiv{
     width: 33%;
-    height: 150px;
+    padding: 50px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .minidiv img{
-    padding: 0px 20px;
+    padding: 0px 10px;
 }
 @media only screen and (max-width: 450px) {
   
@@ -25,7 +25,13 @@
 }
 
 @media only screen and (max-width: 600px) {
-  
+  .bigdiv{
+    flex-direction: column;
+  }
+  .minidiv{
+    width: 100%;
+    padding: 25px 0px;
+  }
 
 
 }
