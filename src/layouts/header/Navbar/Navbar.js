@@ -2,6 +2,7 @@ import React from 'react'
 import '../../../UI/navbar.css'
 import BrowseCategories from '../Navbar/BrowseCategories'
 import vector from '../../../assets/icon/header/Vector.svg'
+import { NavLink } from 'react-router-dom'
 
 function Navbar() {
   return (
@@ -10,9 +11,9 @@ function Navbar() {
       <BrowseCategories/>
       <div className='navbarCategories'>
         <ul>
-          <li>Home</li>
+          <li><NavLink to={"/"}>Home</NavLink></li>
           <img src={vector}/>
-          <li>Catalog</li>
+          <li><NavLink to={"/catalog"}>Catalog</NavLink></li>
           <img src={vector}/>
           <li>Blog</li>
           <li>Pages</li>
