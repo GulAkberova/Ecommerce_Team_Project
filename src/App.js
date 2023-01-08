@@ -10,19 +10,30 @@ import { RouterSharp } from '@mui/icons-material';
 import HomePage from './pages/HomePage/HomePage';
 import Catalog from './pages/CatalogPage/Catalog';
 
-function App() {
-  let { product, setProduct } = useContext(allProductContext);
-
-  useEffect(() => {
-    
-      agent.getAll()
-      .then((res) => {
-        console.log(res);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  });
+  function App() {
+    let { setProduct, setCategories } = useContext(allProductContext);
+  
+    useEffect(() => {
+      agent
+        .getAll()
+        .then((res) => {
+          setProduct(res);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    });
+  
+    useEffect(() => {
+      agent
+        .getByCategory()
+        .then((res) => {
+          setCategories(res);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    });
   return (
     <>
    

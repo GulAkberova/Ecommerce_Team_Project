@@ -12,5 +12,51 @@
     list-style: none;
 	font-family: 'Poppins';
 }
+.swiper-pagination-bullet {
+	background-color: #fff !important;
+	border: 1px solid grey !important;
+	width: 16px !important ;
+	height: 16px !important;
+}
+
+.swiper-pagination-bullet-active {
+	border: 1px solid #eda415 !important;
+	background-color: #eda415 !important;
+	width: 16px !important;
+	height: 16px !important;
+}
+.swiper-button-prev::after {
+	display: none;
+}
+
+.swiper-button-next {
+	right: 3px !important;
+	width: 25px !important;
+	height: 25px !important;
+	background-color: #eaeaea;
+	border-radius: 50%;
+	background-image: url(./assets/icon/arrow-left.svg);
+	background-repeat: no-repeat;
+	background-position: -1px 0px;
+	background-size: cover;
+	transform: rotate(180deg);
+	top: 47% !important;
+}
+
+.swiper-button-next::after {
+	display: none;
+}
+.swiper-button-prev {
+	width: 25px !important;
+	height: 25px !important;
+	left: 3px !important;
+	background-color: #eaeaea;
+	border-radius: 50%;
+	background-image: url(./assets/icon/arrow-left.svg);
+	background-repeat: no-repeat;
+	background-position: -2px 0px;
+	background-size: cover;
+	top: 47% !important;
+}
 
 
