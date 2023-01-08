@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import './App.css';
 import { useContext, useEffect } from 'react';
 import { allProductContext } from './context/allProductConetxt';
@@ -10,28 +11,50 @@ import Footer from './layouts/footer/Footer';
 
 
 
+=======
+import "./App.css";
+import { useContext, useEffect } from "react";
+import { allProductContext } from "./context/allProductContext";
+
+import { Router, Routes } from "react-router-dom";
+import Banner from "./components/Banner";
+import MiniBanner from "./components/MiniBanner";
+import PersonCarusel from "./components/PersonCarusel";
+import Spacingtech from "./components/Spacingtech";
+import Latest from "./components/Latest";
+import LimitCarusel from "./components/LimitCarusel";
+import agent from "./api/agent";
+>>>>>>> ab043d8d7c40f5f70570dfe42f3787934e8c19bb
 
 function App() {
-  let {product, setProduct}=useContext(allProductContext)
-  
+  let { product, setProduct } = useContext(allProductContext);
+
   useEffect(() => {
-    instance
-      .get("/")
-      .then((res) =>{
-        console.log(res.data)
-      })
-      .catch(err=>{
-        console.log(err)
-      })
     
+      agent.getAll()
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   });
   return (
     <>
+<<<<<<< HEAD
     <Information/>
     <Search/>
     <Navbar/>
     <HeroCart/>
     <Footer/>
+=======
+      <Banner />
+      <LimitCarusel/>
+      <MiniBanner/>
+      <PersonCarusel/>
+      <Spacingtech/>
+      <Latest/>
+>>>>>>> ab043d8d7c40f5f70570dfe42f3787934e8c19bb
     </>
   );
 }

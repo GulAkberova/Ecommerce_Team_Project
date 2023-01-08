@@ -1,0 +1,11 @@
+.container{
+    padding: 30px 50px;
+}
+.bigdiv{
+    width: 100%;
+    display: flex;
+    padding: 30px 30px;
+    justify-content: space-between;
+    background-color: #E2F4FF;
+    border-radius: 10px;
+}
