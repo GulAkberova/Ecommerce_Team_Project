@@ -1,37 +1,14 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> Zeyneb
 import './App.css';
 import { useContext, useEffect } from 'react';
-import { allProductContext } from './context/allProductConetxt';
+import { allProductContext } from './context/allProductContext';
 import { instance } from './api/agent';
-<<<<<<< HEAD
-import { Router, Routes } from 'react-router-dom';
-=======
-import Information from './layouts/header/Information/Information';
-import Search from './layouts/header/Search/Search';
-import Navbar from './layouts/header/Navbar/Navbar';
-import HeroCart from './components/HeroCart';
+import { Route, Routes } from 'react-router-dom';
 import Footer from './layouts/footer/Footer';
-
-
-
-=======
-import "./App.css";
-import { useContext, useEffect } from "react";
-import { allProductContext } from "./context/allProductContext";
-
-import { Router, Routes } from "react-router-dom";
-import Banner from "./components/Banner";
-import MiniBanner from "./components/MiniBanner";
-import PersonCarusel from "./components/PersonCarusel";
-import Spacingtech from "./components/Spacingtech";
-import Latest from "./components/Latest";
-import LimitCarusel from "./components/LimitCarusel";
 import agent from "./api/agent";
->>>>>>> ab043d8d7c40f5f70570dfe42f3787934e8c19bb
->>>>>>> Zeyneb
+import Header from './layouts/header/Header';
+import { RouterSharp } from '@mui/icons-material';
+import HomePage from './pages/HomePage/HomePage';
+import Catalog from './pages/CatalogPage/Catalog';
 
 function App() {
   let { product, setProduct } = useContext(allProductContext);
@@ -48,30 +25,17 @@ function App() {
   });
   return (
     <>
-<<<<<<< HEAD
-    
+   
+    <Header/>
     <Routes>
-      <Router>
+    <Route path='/' element={<HomePage/>}/>
+    <Route path='/catalog' element={<Catalog/>}/>
 
-      </Router>
+      {/* <Route path='/product' element={<Product/>}/>
+      <Route path='/detail/:id' element={<Detail/>}/>
+      <Route path='/wishlist' element={<Wishlist/>}/> */}
     </Routes>
-    
-=======
-<<<<<<< HEAD
-    <Information/>
-    <Search/>
-    <Navbar/>
-    <HeroCart/>
     <Footer/>
-=======
-      <Banner />
-      <LimitCarusel/>
-      <MiniBanner/>
-      <PersonCarusel/>
-      <Spacingtech/>
-      <Latest/>
->>>>>>> ab043d8d7c40f5f70570dfe42f3787934e8c19bb
->>>>>>> Zeyneb
     </>
   );
 }
