@@ -1,0 +1,58 @@
+.container{
+    padding: 30px 50px;
+}
+.bigdiv{
+    width: 100%;
+    background-color: #E2F4FF;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+.minidiv{
+    width: 33%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.minidiv img{
+    padding: 0px 20px;
+}
+@media only screen and (max-width: 450px) {
+  
+
+}
+
+@media only screen and (max-width: 600px) {
+  
+
+
+}
+
+@media only screen and (max-width: 768px) {
+    .container{
+        padding: 20px 10px;
+    }
+    .minidiv img{
+        width: 70px;
+        height: 50px;
+        object-fit: cover;
+    }
+    .minidiv h4{
+        font-size: 15px;
+    }
+    .minidiv p{
+        font-size: 10px;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+}
+   

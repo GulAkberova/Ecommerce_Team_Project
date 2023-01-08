@@ -1,0 +1,109 @@
+.container{
+    padding: 30px 50px;
+}
+.bigdiv{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.miniDivCarusel{
+    width: 60%;
+    border: 1px solid rgba(128, 128, 128, 0.496);
+    padding: 30px 20px;
+    border-radius: 20px;
+}
+.miniDiv{
+    display: flex;
+    justify-content: space-between;
+}
+.miniImgDiv {
+    width: 50%;
+    height: 200px;
+    border-radius: 20px;
+}
+.miniImgDiv img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+
+}
+.miniTextDiv{
+    width: 40%;
+}
+.spans{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 6px;
+}
+.spans span{
+    width: 50px;
+    height: 50px;
+    background-color: #E2F4FF;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    color: #EDA415;
+}
+.miniTextDiv p{
+    padding: 10px 0px;
+    font-weight: 700;
+    font-size: 14px;
+}
+.btns{
+    display: flex;
+    padding: 20px 0px;
+}
+.btn1{
+    width: 60%;
+    background-color: #87BCD9;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    border: 1px solid #87BCD9;
+    border-radius: 20px;
+
+}
+.btn2{
+    padding: 6px 10px;
+    background-color: #87BCD9;
+    border-radius: 20px;
+    border: 1px solid #87BCD9;
+    margin: 0px 20px;
+}
+.smallMiniDiv{
+    width: 35%;
+    gap: 10px;
+   
+}
+.smallDiv{
+    width: 100%;
+    border: 1px solid rgba(128, 128, 128, 0.593);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+.smallDivImg{
+    width: 50%;
+    height: 100px;
+
+}
+.smallDivImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.smallDivText{
+    width: 40%;
+}
+.smallDivText p{
+    font-size: 12px;
+    font-weight: 700;
+    padding: 10px 0px;
+}

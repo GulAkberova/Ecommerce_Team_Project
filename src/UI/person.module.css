@@ -1,0 +1,38 @@
+.container{
+    padding: 30px 50px;
+}
+.bigdiv{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.minidiv{
+    width: 33%;
+    border: 1px solid rgba(128, 128, 128, 0.415);
+    padding: 10px;
+    border-radius: 20px;
+}
+.personInfoDiv{
+    display: flex;
+    align-items: center;
+}
+.personInfoDiv h3{
+    padding: 0px 30px;
+}
+.personimg{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 3px dashed #EDA415;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.textdiv{
+    background-color: #E2F4FF;
+    border-radius: 10px;
+    padding: 10px 10px 10px 30px;
+    font-size: 13px;
+    margin-top: 20px;
+    line-height: 16px;
+}
