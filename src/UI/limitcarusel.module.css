@@ -9,16 +9,22 @@
 .miniDivCarusel{
     width: 60%;
     border: 1px solid rgba(128, 128, 128, 0.496);
-    padding: 30px 20px;
+    padding: 0px 20px;
     border-radius: 20px;
 }
 .miniDiv{
+    width: 100%;
+    padding: 50px 0px;
+}
+.miniDiv1{
     display: flex;
+    width: 100%;
     justify-content: space-between;
+    align-items: center;
 }
 .miniImgDiv {
     width: 50%;
-    height: 200px;
+    height: 290px;
     border-radius: 20px;
 }
 .miniImgDiv img{
@@ -30,6 +36,10 @@
 }
 .miniTextDiv{
     width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
 }
 .spans{
     display: flex;
@@ -54,19 +64,24 @@
 }
 .btns{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 20px 0px;
+    /* border: 1px solid black; */
 }
 .btn1{
-    width: 60%;
+    width: 80%;
     background-color: #87BCD9;
     font-weight: 600;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 0px;
+    padding: 5px 60px;
     border: 1px solid #87BCD9;
     border-radius: 20px;
-
+}
+.btn1 img{
+    width: 30px;
 }
 .btn2{
     padding: 6px 10px;
@@ -107,3 +122,51 @@
     font-weight: 700;
     padding: 10px 0px;
 }
+
+
+/* _________________Swiper__________ */
+/* .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .swiper-pagination-bullet {
+	background-color: #fff !important;
+	border: 1px solid grey !important;
+	width: 16px !important ;
+	height: 16px !important;
+}
+
+.swiper-pagination-bullet-active {
+	border: 1px solid #eda415 !important;
+	background-color: #eda415 !important;
+	width: 16px !important;
+	height: 16px !important;
+}
+.appp{
+    background-color: #eda415;
+} */

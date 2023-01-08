@@ -6,11 +6,16 @@
     display: flex;
     justify-content: space-between;
 }
+.bigdivcarusel{
+    width: 100%;
+    padding: 50px 0px !important;
+}
 .minidiv{
     width: 33%;
     border: 1px solid rgba(128, 128, 128, 0.415);
     padding: 10px;
     border-radius: 20px;
+    margin: 0px 10px;
 }
 .personInfoDiv{
     display: flex;

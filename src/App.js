@@ -1,11 +1,17 @@
-import './App.css';
-import { useContext, useEffect } from 'react';
-import { allProductContext } from './context/allProductContext';
-import { instance } from './api/agent';
-import { Route, Routes } from 'react-router-dom';
-import Footer from './layouts/footer/Footer';
+import "./App.css";
+import { useContext, useEffect } from "react";
+import { allProductContext } from "./context/allProductContext";
+import "swiper/css/bundle";
+import { Route, Routes } from "react-router-dom";
+// import Banner from "./components/Banner";
+// import MiniBanner from "./components/MiniBanner";
+// import PersonCarusel from "./components/PersonCarusel";
+// import Spacingtech from "./components/Spacingtech";
+// import Latest from "./components/Latest";
+// import LimitCarusel from "./components/LimitCarusel";
 import agent from "./api/agent";
 import Header from './layouts/header/Header';
+import Footer from './layouts/footer/Footer'
 import { RouterSharp } from '@mui/icons-material';
 import HomePage from './pages/HomePage/HomePage';
 import Catalog from './pages/CatalogPage/Catalog';
