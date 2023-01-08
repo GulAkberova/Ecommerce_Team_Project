@@ -17,13 +17,24 @@ import HomePage from './pages/HomePage/HomePage';
 import Catalog from './pages/CatalogPage/Catalog';
 
 function App() {
-  let { product, setProduct } = useContext(allProductContext);
+  let { setProduct, setCategories } = useContext(allProductContext);
 
   useEffect(() => {
-    
-      agent.getAll()
+    agent
+      .getAll()
       .then((res) => {
-        console.log(res);
+        setProduct(res);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  });
+
+  useEffect(() => {
+    agent
+      .getByCategory()
+      .then((res) => {
+        setCategories(res);
       })
       .catch((err) => {
         console.log(err);

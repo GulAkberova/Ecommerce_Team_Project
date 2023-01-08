@@ -10,18 +10,20 @@
     display: flex;
     gap: 20px;
 }
+
 .latestBigDivCarusel{
     width: 100%;
     padding: 50px 0px;
 }
 .latestMiniDiv{
-    width: 49%;
+    width: 100%;
     border: 1px solid rgba(128, 128, 128, 0.601);
     border-radius: 20px;
     padding: 30px 20px;
     display: flex;
     justify-content: space-between;
     margin: 0px 20px;
+
 }
 .latestMiniImg{
     width: 50%;
@@ -53,4 +55,39 @@
     font-weight: 600;
     padding: 16px 0px;
 }
+@media only screen and (max-width: 450px) {
+  
+
+}
+
+@media only screen and (max-width: 600px) {
+  
+   
+
+}
+
+@media only screen and (max-width: 768px) {
+    .container{
+        padding: 30px 0px;
+    }
+    .latestMiniDiv{
+        flex-direction: column;
+    }
+    .latestMiniImg, .latestTextDiv{
+        width: 100%;
+        padding: 17px 0px;
+    }
+
+
+}
+
+@media only screen and (max-width: 992px) {
+ 
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+}
+   
 

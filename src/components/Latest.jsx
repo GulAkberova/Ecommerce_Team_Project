@@ -17,11 +17,29 @@ function Latest() {
         </div>
         <div className={latest.latestBigDiv}>
            <Swiper
-        spaceBetween={30}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Pagination]}
+       	slidesPerView={1}
+           pagination={{
+               clickable: true,
+
+           }}
+           breakpoints={{
+            640: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 1,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 2,
+              spaceBetween: 50,
+            },
+          
+          }}
+    spaceBetween={30}
+   
+    modules={[Pagination]}
         className={latest.latestBigDivCarusel}
       >
         <SwiperSlide>
@@ -39,6 +57,10 @@ pain that produces?</h2>
                 </div>
 
             </div>
+          
+        </SwiperSlide>
+        <SwiperSlide>
+     
             <div className={latest.latestMiniDiv}>
                 <div className={latest.latestMiniImg}>
                     <img src={PIT}/>
@@ -55,36 +77,22 @@ pain that produces?</h2>
             </div>
         </SwiperSlide>
         <SwiperSlide>
-        <div className={latest.latestMiniDiv}>
-                <div className={latest.latestMiniImg}>
-                    <img src={PIT}/>
+     
+     <div className={latest.latestMiniDiv}>
+         <div className={latest.latestMiniImg}>
+             <img src={PIT}/>
 
-                </div>
-                <div className={latest.latestTextDiv}>
-                    <span className={latest.latestTextDate}>22,oct,2021</span>
-                    <h2>Who avoids a 
+         </div>
+         <div className={latest.latestTextDiv}>
+             <span className={latest.latestTextDate}>22,oct,2021</span>
+             <h2>Who avoids a 
 pain that produces?</h2>
 <p>Lorem ipsum dolor sit amet consectetur. Nec sit enim tellus faucibus bibendum ullamcorper. Phasellus tristique aenean at lorem sed scelerisque.</p>
 <p className={latest.latestTextBy}>By spacing tech</p>
-                </div>
+         </div>
 
-            </div>
-            <div className={latest.latestMiniDiv}>
-                <div className={latest.latestMiniImg}>
-                    <img src={PIT}/>
-
-                </div>
-                <div className={latest.latestTextDiv}>
-                    <span className={latest.latestTextDate}>22,oct,2021</span>
-                    <h2>Who avoids a 
-pain that produces?</h2>
-<p>Lorem ipsum dolor sit amet consectetur. Nec sit enim tellus faucibus bibendum ullamcorper. Phasellus tristique aenean at lorem sed scelerisque.</p>
-<p className={latest.latestTextBy}>By spacing tech</p>
-                </div>
-
-            </div>
-        </SwiperSlide>
-      
+     </div>
+ </SwiperSlide>
       </Swiper>
           
            </div>

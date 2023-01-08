@@ -1,0 +1,8 @@
+.container{
+    padding: 30px 50px;
+}
+.bigdiv{ 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
