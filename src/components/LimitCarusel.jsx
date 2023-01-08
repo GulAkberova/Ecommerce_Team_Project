@@ -5,6 +5,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
 import limit from '../UI/limitcarusel.module.css'
 import PIT from '../assets/image/productImgTest.png' 
+import img1 from '../assets/image/11 1.png'
+import img2 from '../assets/image/Frame 29.png'
+import img3 from '../assets/image/Frame 29 (1).png'
 import basket from '../assets/icon/shopping-cart.png'
 import eye from '../assets/icon/eye.png'
 
@@ -15,11 +18,17 @@ function LimitCarusel() {
     <div className={limit.container}>
         <div className={limit.bigdiv}>
             <div className={limit.miniDivCarusel}>
-            <Swiper pagination={true} modules={[Pagination]} className={limit.miniDiv}>
+            <Swiper 
+              spaceBetween={30}
+              pagination={{
+                clickable: true,
+              }}
+              modules={[Pagination]}
+              className={limit.miniDiv}>
         <SwiperSlide>
         <div className={limit.miniDiv1}>
                     <div className={limit.miniImgDiv}>
-              <img src={PIT}/>
+              <img src={img1}/>
                     </div>
                     <div className={limit.miniTextDiv}>
                         <h4>JBL bar 2.1 deep bass</h4>
@@ -90,7 +99,7 @@ function LimitCarusel() {
             <div className={limit.smallMiniDiv}>
                 <div className={limit.smallDiv}>
                     <div className={limit.smallDivImg}>
-                        <img src={PIT}/>
+                        <img src={img2}/>
 
                     </div>
                     <div className={limit.smallDivText}>
@@ -102,7 +111,7 @@ function LimitCarusel() {
                 </div>
                 <div className={limit.smallDiv}>
                     <div className={limit.smallDivImg}>
-                        <img src={PIT}/>
+                        <img src={img3}/>
 
                     </div>
                     <div className={limit.smallDivText}>

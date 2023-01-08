@@ -10,6 +10,10 @@
     display: flex;
     gap: 20px;
 }
+.latestBigDivCarusel{
+    width: 100%;
+    padding: 50px 0px;
+}
 .latestMiniDiv{
     width: 49%;
     border: 1px solid rgba(128, 128, 128, 0.601);
@@ -17,11 +21,12 @@
     padding: 30px 20px;
     display: flex;
     justify-content: space-between;
+    margin: 0px 20px;
 }
 .latestMiniImg{
     width: 50%;
     height: 280px;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 .latestMiniImg img{
     width: 100%;
