@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 *{
     margin: 0;
@@ -7,3 +8,31 @@
     box-sizing: border-box;
     font-family: "Poppins";
 }
+=======
+@font-face {
+	font-family: 'Poppins';
+	src: url(./assets/fonts/Poppins-Medium.ttf) format('opentype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+	font-family: 'Poppins';
+}
+.swiper-pagination-bullet {
+	background-color: #fff !important;
+	border: 1px solid grey !important;
+	width: 16px !important ;
+	height: 16px !important;
+}
+
+.swiper-pagination-bullet-active {
+	border: 1px solid #eda415 !important;
+	background-color: #eda415 !important;
+	width: 16px !important;
+	height: 16px !important;
+}
+>>>>>>> Zeynab

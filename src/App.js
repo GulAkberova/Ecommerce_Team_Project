@@ -1,15 +1,8 @@
-import "./App.css";
-import { useContext, useEffect } from "react";
-import { allProductContext } from "./context/allProductContext";
-
-import { Router, Routes } from "react-router-dom";
-import Banner from "./components/Banner";
-import MiniBanner from "./components/MiniBanner";
-import PersonCarusel from "./components/PersonCarusel";
-import Spacingtech from "./components/Spacingtech";
-import Latest from "./components/Latest";
-import LimitCarusel from "./components/LimitCarusel";
-import agent from "./api/agent";
+import './App.css';
+import { useContext, useEffect } from 'react';
+import { allProductContext } from './context/allProductConetxt';
+import { instance } from './api/agent';
+import { Router, Routes } from 'react-router-dom';
 
 function App() {
   let { product, setProduct } = useContext(allProductContext);
@@ -26,12 +19,13 @@ function App() {
   });
   return (
     <>
-      <Banner />
-      <LimitCarusel/>
-      <MiniBanner/>
-      <PersonCarusel/>
-      <Spacingtech/>
-      <Latest/>
+    
+    <Routes>
+      <Router>
+
+      </Router>
+    </Routes>
+    
     </>
   );
 }

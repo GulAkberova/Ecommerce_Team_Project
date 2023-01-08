@@ -1,0 +1,69 @@
+.footerBox{
+    background-color:#E2F4FF;
+    padding-top: 42px;
+}
+.SubscribeBox{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 0 60px 40px;
+    justify-content: space-between;
+    background-color:#fff;
+    border-radius: 20px;
+}
+.subNew{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:#1B5A7D;
+}
+.callUsBox{
+    margin-left: 20px;
+}
+.mailBtnBox{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 30px;
+gap: 10px;
+width: 388px;
+height: 63px;
+background-color: #EDA415;
+color: #fff;
+border-radius: 20px;
+}
+.linkBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    color: #1B5A7D;
+
+}
+.findProduct{
+    color: #1B5A7D;
+}
+.getLink{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+.findProduct{
+    display: flex;
+    flex-direction: column;
+}
+.footerUl{
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+font-size: 19.38px;
+line-height: 29px;
+color: #1B5A7D;
+
+}
+.callUs{
+    display:flex;
+}
+.social{
+    
+}
