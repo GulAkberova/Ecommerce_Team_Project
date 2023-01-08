@@ -6,9 +6,7 @@ import PersonCarusel from "../../components/PersonCarusel";
 import Spacingtech from "../../components/Spacingtech";
 import Latest from "../../components/Latest";
 import LimitCarusel from "../../components/LimitCarusel";
-import Cards from "../../components/Cards";
-import CategoryPills from "../../components/CategoryPills";
-
+import ItemsSlider from "../../components/ItemsSlider";
 function HomePage() {
   return (
     <div>
@@ -16,6 +14,14 @@ function HomePage() {
       <Banner />
       <CategoryPills />
       <Cards />
+      <LimitCarusel />
+      <MiniBanner />
+      <PersonCarusel />
+      <Spacingtech />
+      <Latest />
+      <HeroCart />
+      <ItemsSlider />
+      <Banner />
       <LimitCarusel />
       <MiniBanner />
       <PersonCarusel />

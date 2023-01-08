@@ -11,14 +11,20 @@ function Spacingtech() {
     <>
     <div className={tech.container}>
         <div className={tech.bigdiv}>
-            {/* <div className={tech.minidiv}> */}
-                <img src={tech1}/>
-                <img src={tech2}/>
-                <img src={tech3}/>
-                <img src={tech4}/>
-                <img src={tech5}/>
+               <div>
+               <img src={tech1}/>
+               </div>
+            
+               <div>
+               <img src={tech3}/>
+               </div>
+               <div>
+               <img src={tech4}/>
+               </div>
+               <div>
+               <img src={tech5}/>
+               </div>
 
-            {/* </div> */}
 
         </div>
 
