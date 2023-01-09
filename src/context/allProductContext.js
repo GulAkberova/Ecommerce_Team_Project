@@ -5,11 +5,14 @@ export const allProductContext = createContext(null);
 export const AllProductProvider = ({ children }) => {
   const [product, setProduct] = useState([]);
   const [categories, setCategories] = useState([]);
+  const [selectedCategories, setSelectedCategories] = useState("electronics");
   const values = {
     product,
     setProduct,
     categories,
     setCategories,
+    selectedCategories,
+    setSelectedCategories,
   };
   return (
     <allProductContext.Provider value={values}>

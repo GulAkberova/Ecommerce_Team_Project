@@ -1,4 +1,3 @@
-
 import { useContext,useEffect } from "react";
 import CategoryPillCss from "../UI/CategoryPills.module.css"
 import { allProductContext } from "../context/allProductContext";
@@ -6,8 +5,8 @@ import agent from "../api/agent";
 
 
 
-export default function Cards() {
-  let { categories,  selectedCategories,setSelectedCategories,setCategories} = useContext(allProductContext);
+export default function CategoryPills() {
+  let { categories,selectedCategories,setSelectedCategories,setCategories} = useContext(allProductContext);
 
   useEffect(() => {
     agent.getByCategory().then((res) => setCategories(res));

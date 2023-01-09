@@ -6,7 +6,7 @@ import ReactStars from "react-rating-stars-component";
 
 
 export default function Cards() {
-  let { product,selectedCategories} = useContext(allProductContext);
+  let {product,selectedCategories} = useContext(allProductContext);
 
   const [style, setStyle] = useState("");
  

@@ -7,21 +7,16 @@ import Spacingtech from "../../components/Spacingtech";
 import Latest from "../../components/Latest";
 import LimitCarusel from "../../components/LimitCarusel";
 import ItemsSlider from "../../components/ItemsSlider";
+import Cards from "../../components/Cards";
+import CategoryPills from "../../components/CategoryPills";
 function HomePage() {
   return (
     <div>
       <HeroCart />
-      <Banner />
-      <CategoryPills />
-      <Cards />
-      <LimitCarusel />
-      <MiniBanner />
-      <PersonCarusel />
-      <Spacingtech />
-      <Latest />
-      <HeroCart />
       <ItemsSlider />
       <Banner />
+      {/* <CategoryPills /> */}
+      <Cards />
       <LimitCarusel />
       <MiniBanner />
       <PersonCarusel />
