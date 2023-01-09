@@ -6,3 +6,28 @@
     display: flex;
     justify-content: space-between;
 }
+.filterBigDiv{
+    width: 25%;
+    border: 1px solid rgba(128, 128, 128, 0.645);
+    border-radius: 20px;
+    padding: 10px;
+
+}
+.filterHeadDiv{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+
+}
+.filterMiniDiv div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cardBigDiv{
+    width: 74%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
