@@ -9,6 +9,8 @@ import LimitCarusel from "../../components/LimitCarusel";
 import ItemsSlider from "../../components/ItemsSlider";
 import Cards from "../../components/Cards";
 import CategoryPills from "../../components/CategoryPills";
+import Product from "../../components/Product";
+import ProductFilter from "../../components/ProductFilter";
 function HomePage() {
   return (
     <div>
@@ -16,7 +18,9 @@ function HomePage() {
       <ItemsSlider />
       <Banner />
       {/* <CategoryPills /> */}
-      <Cards />
+      {/* <Cards /> */}
+      <ProductFilter/>
+      <Product/>
       <LimitCarusel />
       <MiniBanner />
       <PersonCarusel />

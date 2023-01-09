@@ -3,6 +3,7 @@ const BASE_URL = "https://fakestoreapi.com/products";
 
 const axiosInstance = axios.create({
   baseURL: BASE_URL,
+  timeout: 7000,
 });
 
 const agent = {
@@ -41,5 +42,18 @@ const agent = {
     }
     return response;
   },
+  getById: async (id) => {
+
+    let response = {}
+    await axiosInstance.get(`/${id}`)
+        .then(res => {
+            response = res.data;
+        });
+    if (response == null) {
+        throw "404 data not found!!"
+    }
+    return response;
+
+},
 };
 export default agent;

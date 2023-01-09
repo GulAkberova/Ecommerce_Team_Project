@@ -1,8 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { useContext, useState } from "react";
 import { allProductContext } from "../context/allProductContext";
 import CardCss from "../UI/Cards.module.css"
 import ReactStars from "react-rating-stars-component";
+
 
 
 export default function Cards() {
@@ -16,12 +18,12 @@ export default function Cards() {
 
   return (
   
-      <a className={CardCss.itemContainer} >
+      <div className={CardCss.itemContainer} >
         {product.map((item) =>  item.category === selectedCategories && (
           <div style={{cursor:"pointer"}} className={CardCss.cardContainer} onMouseEnter={() => {
             setStyle(item);
           }} onMouseLeave={()=>setStyle("false")}>
-            <img className={CardCss.cardImage } src={item.image} />
+           <Link to={`product/${item.id}`}> <img className={CardCss.cardImage } src={item.image} /></Link>
             <h1 className={CardCss.cardTitle} style={{
               display: style === item ? "none" : "",
             }}>{item.title}</h1>
@@ -47,7 +49,7 @@ export default function Cards() {
             </button>
           </div>
         ))}
-      </a>
+      </div>
 
     
   );

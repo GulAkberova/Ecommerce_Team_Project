@@ -6,6 +6,7 @@ function Detail() {
   return (
     <>
      <DetailCard/>
+
      <DetailDescription/>
 
     </>

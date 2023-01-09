@@ -1,24 +1,37 @@
-import React from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import detail from '../UI/detail.module.css'
 import img1 from '../assets/image/11 1.png'
+import { useParams } from 'react-router'
+import agent from '../api/agent'
+import { allProductContext } from '../context/allProductContext'
 
 function DetailCard() {
+    const param = useParams()
+    let {productData,setProductData} =useContext(allProductContext)
+    useEffect(()=>{
+        agent.getById(param.id)
+        .then((res)=>setProductData(res))
+       
+
+    },[productData])
   return (
     <>
     <div className={detail.container}>
         <div className={detail.bigdiv}>
             <div className={detail.miniDivImg}>
                 <div className={detail.miniDivImgBig}>
-                    <img src={img1}/>
+                    <div className={detail.miniDivImgBig1}>
+                    <img src={productData.image}/>
+                    </div>
 
                 </div>
                 <div className={detail.miniDivImgMini}>
                     <div className={detail.miniDivImgMini1}>
-                        <img src={img1}/>
+                        <img src={productData.image}/>
 
                     </div>
                     <div className={detail.miniDivImgMini1}>
-                        <img src={img1}/>
+                        <img src={productData.image}/>
 
                     </div>
 
@@ -26,8 +39,8 @@ function DetailCard() {
 
             </div>
             <div className={detail.detailText}>
-                <h2>Play game</h2>
-                <h4>$11,70</h4>
+                <h2>{productData.title}</h2>
+                <h4>${productData.price}</h4>
                 <p>Availability: <span>In stock</span></p>
                 <p className={detail.detailSpan}>Hurry up! only 34 product left in stock!</p>
                 <hr/>
