@@ -1,0 +1,72 @@
+.cardTitle {
+  text-align: center;
+  font-size: 15px;
+}
+.itemContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+.cardContainer {
+ 
+box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 10px;
+isolation: isolate;
+width: 350px;
+height: 350px;
+
+border: 0.983537px solid #B6B6B6;
+border-radius: 19.6707px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.cardImage {
+  height: 100px;
+  width: auto;
+}
+.cardPrice{
+  text-align: center;
+  font-size: 20px;
+}
+
+.checked {
+  color: orange;
+}
+  
+
+
+.ButtonCss{
+  font-size: 20px;
+  font-family: "Poppins";
+  display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 0px 0px 25.572px;
+gap: 4.92px;
+isolation: isolate;
+
+width: 204.58px;
+height: 60px;
+
+background: #87BCD9;
+border-radius: 19.6707px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
