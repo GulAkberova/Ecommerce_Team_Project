@@ -1,16 +1,11 @@
-.shopBtn{
-    height: 35px;
-    border-radius: 10px;
-    background-color: #EDA415; /*why*/
-}
-.ViewBtn{
-    height: 35px;
-    border-radius: 10px;
-}
 .heroCart{
     display: flex;
     justify-content: space-between;
+    gap: 350px;
     padding: 40px 175px;
+}
+.canonCameraTextImg{
+    width: 200px;
 }
 .heroCartLeft{
     padding-top: 70px ;

@@ -56,16 +56,26 @@ form.searchInput input[type=text] {
     right: 0;
     border: none;
   }
-/* .searchInput{
-    width: 250px;
-    height: 40px;
-    margin-left: 50px;
-    border-radius: 30px;
-}
-.searchBtn{
-    height: 40px;
-    background-color: #EDA415;
-    color: aliceblue;
-    border-radius: 20px;
+  @media only screen and (max-width: 450px) {
+  
 
-} */
+  }
+  
+  @media only screen and (max-width: 600px) {
+    
+  
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .searchInput{
+        display: none;
+    }
+  }
+  
+  @media only screen and (min-width: 992px) {
+  
+  }
+  
+  @media only screen and (min-width: 1200px) {
+  
+  }
