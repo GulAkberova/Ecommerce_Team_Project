@@ -3,11 +3,14 @@
 }
 .bigdiv{ 
     width: 100%;
+    /* display: flex;
+    justify-content: space-between; */
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
 }
 .filterBigDiv{
-    width: 25%;
+    width: 95%;
     border: 1px solid rgba(128, 128, 128, 0.645);
     border-radius: 20px;
     padding: 10px;
@@ -31,3 +34,6 @@
     gap: 10px;
 
 }
+/* .filterDivs{
+    width: 80%;
+} */

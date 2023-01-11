@@ -4,6 +4,7 @@ import img1 from '../assets/image/11 1.png'
 import { useParams } from 'react-router'
 import agent from '../api/agent'
 import { allProductContext } from '../context/allProductContext'
+import ReactStars from "react-rating-stars-component";
 
 function DetailCard() {
     const param = useParams()
@@ -14,6 +15,9 @@ function DetailCard() {
        
 
     },[productData])
+    const ratingChanged = (newRating) => {
+        console.log(newRating);
+      };
   return (
     <>
     <div className={detail.container}>
@@ -41,6 +45,12 @@ function DetailCard() {
             <div className={detail.detailText}>
                 <h2>{productData.title}</h2>
                 <h4>${productData.price}</h4>
+                <ReactStars  
+            count={5}
+            onChange={ratingChanged}
+            size={24}
+            activeColor="#ffd700"
+       /> 
                 <p>Availability: <span>In stock</span></p>
                 <p className={detail.detailSpan}>Hurry up! only 34 product left in stock!</p>
                 <hr/>

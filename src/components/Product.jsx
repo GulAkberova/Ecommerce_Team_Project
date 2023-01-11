@@ -46,7 +46,7 @@ function Product() {
                 </div>
                 <div className={products.miniDivHover}>
                     <button className={products.miniDivBtn1}>Add to Cart</button>
-                    <button className={products.miniDivBtn2}>G</button>
+                    {/* <button className={products.miniDivBtn2}>G</button> */}
 
                 </div>
                     
