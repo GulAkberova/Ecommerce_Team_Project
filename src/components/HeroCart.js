@@ -20,42 +20,61 @@ function HeroCart() {
     <Swiper pagination={pagination} modules={[Pagination]} className="mySwiper">
 				<SwiperSlide>
         <div className='heroCart'>
+          
           <div className='heroCartLeft'>
-          <div className='canonCameraImg'>
+          <div className='canonCameraTextImg'>
           <img src={canonCamera}/>
           </div>
         <div className='heroBtn'>
         <button variant="contained" className='shopBtn'>Shop now</button>
         <button variant="outlined" className='viewBtn'>View more</button>
         </div>
+        </div>
+
+        <div className='heroCartRight'>
+          <img src={hero}/>
+        </div>
+
+        </div>
+				</SwiperSlide>
+				<SwiperSlide>
+        <div className='heroCart'>
+
+          <div className='heroCartLeft'>
+          <div className='canonCameraTextImg'>
+          <img src={canonCamera}/>
           </div>
+
+        <div className='heroBtn'>
+        <button variant="contained" className='shopBtn'>Shop now</button>
+        <button variant="outlined" className='viewBtn'>View more</button>
+        </div>
+
+          </div>
+          
         <div className='heroCartRight'>
         <img src={hero}/>
         </div>
         </div>
 				</SwiperSlide>
 				<SwiperSlide>
-        <div className='canonCameraImg'>
+        <div className='heroCart'>
+
+          <div className='heroCartLeft'>
+          <div className='canonCameraTextImg'>
           <img src={canonCamera}/>
           </div>
+
         <div className='heroBtn'>
         <button variant="contained" className='shopBtn'>Shop now</button>
         <button variant="outlined" className='viewBtn'>View more</button>
         </div>
-        <div className='heroImg'>
-        <img src={hero}/>
-        </div>
-				</SwiperSlide>
-				<SwiperSlide>
-        <div className='canonCameraImg'>
-          <img src={canonCamera}/>
+
           </div>
-        <div className='heroBtn'>
-        <button variant="contained" className='shopBtn'>Shop now</button>
-        <button variant="outlined" className='viewBtn'>View more</button>
-        </div>
-        <div className='heroImg'>
+          
+        <div className='heroCartRight'>
         <img src={hero}/>
+        </div>
         </div>
 				</SwiperSlide>
 			</Swiper>

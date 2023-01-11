@@ -23,3 +23,41 @@
 .infoBoxRight > p{
     padding-left: 10px;
 }
+@media only screen and (max-width: 450px) {
+  .infoBox{
+    display: flex;
+    flex-direction: column;
+  }
+  .infoBoxLeft p{
+    margin-left: 20px;
+
+  }
+  .infoBoxRight img{
+    margin-left: 20px;
+  }
+
+}
+@media only screen and (max-width: 415px) {
+    .infoBoxRight {
+      display: none;
+    }
+  
+  }
+
+@media only screen and (max-width: 600px) {
+  
+   
+
+}
+
+@media only screen and (max-width: 768px) {
+   
+}
+
+@media only screen and (min-width: 992px) {
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+}

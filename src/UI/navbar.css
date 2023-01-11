@@ -21,8 +21,42 @@ ul{
     padding: 10px;
     display: flex;
     justify-content: space-between;
+    list-style: none;
 }
 ul > img{
     padding:0 15px;
 }
+@media only screen and (max-width: 450px) {
+  
 
+}
+
+@media only screen and (max-width: 600px) {
+  
+    .navbarBoxLeft ul{
+        font-size: 17px;
+    }
+    /* .minidiv p{
+        font-size: 14px;
+    } */
+  
+    .navbarBox{
+        height: 200px;
+    }
+
+
+}
+
+@media only screen and (max-width: 768px) {
+    
+    }
+
+
+
+@media only screen and (min-width: 992px) {
+   
+}
+
+@media only screen and (min-width: 1200px) {
+
+}
