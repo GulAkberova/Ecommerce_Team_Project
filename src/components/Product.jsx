@@ -12,11 +12,9 @@ function Product() {
     const [style, setStyle] = useState("");
    
     const ratingChanged = (newRating) => {
-      console.log(newRating);
+      // console.log(newRating);
     };
-   useEffect(()=>{
-    console.log(product)
-   },[product])
+ 
   
   return (
     <>
@@ -24,17 +22,21 @@ function Product() {
       <div className={products.container}>
         <div className={products.bigdiv}>
            {
-            product && product.map((item,key)=>(
+            product && product.map((item,key)=> item.category === selectedCategories &&
+          
+            (
                 <div key={item.id} className={products.minidiv}>
                <div className={products.miniDivImgBig}>
                <div className={products.miniDivImg}>
                     <Link to={`product/${item.id}`}><img src={item.image}/></Link>
                 </div>
-                <button>Ur</button>
+                <button className={products.favorite}><i class="fa-regular fa-heart"></i></button>
+                <button className={products.basket}><i class="fa-solid fa-basket-shopping"></i></button>
+               
                </div>
 
                 <div className={products.miniDivText}>
-                    <h4>{item.title}</h4>
+                    <h5>{item.title.slice(0,50)}...</h5>
                     <p>${item.price}</p>
                     <ReactStars  
             count={5}
@@ -44,11 +46,7 @@ function Product() {
        /> 
 
                 </div>
-                <div className={products.miniDivHover}>
-                    <button className={products.miniDivBtn1}>Add to Cart</button>
-                    {/* <button className={products.miniDivBtn2}>G</button> */}
-
-                </div>
+               
                     
 
             </div>

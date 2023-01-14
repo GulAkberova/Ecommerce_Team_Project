@@ -3,37 +3,30 @@
 }
 .bigdiv{ 
     width: 100%;
-    /* display: flex;
-    justify-content: space-between; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.filterBigDiv{
-    width: 95%;
-    border: 1px solid rgba(128, 128, 128, 0.645);
-    border-radius: 20px;
-    padding: 10px;
-
-}
-.filterHeadDiv{
     display: flex;
     justify-content: space-between;
-    padding: 10px 0px;
-
+    /* align-items: center; */
 }
-.filterMiniDiv div{
+.filter_divs{
+    width: 25%;
+    border: 1px solid rgba(101, 99, 99, 0.204); 
+    padding: 10px 7px;
+    border-radius: 5px;
+}
+.filter_divs div{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    padding: 7px 0px;
+    font-size: 12px;
 }
+.filter_divs div h4{
+    color: #2c556d;
+}
+/* __________________Card___________ */
 .cardBigDiv{
     width: 74%;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-
 }
-/* .filterDivs{
-    width: 80%;
-} */
+

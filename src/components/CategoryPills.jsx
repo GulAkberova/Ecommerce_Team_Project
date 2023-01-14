@@ -11,6 +11,7 @@ export default function CategoryPills() {
   useEffect(() => {
     agent.getByCategory().then((res) => setCategories(res));
   }, []);
+  console.log(categories)
   return (
     <div>
       <div className={CategoryPillCss.contaionerOfCategoryPills}>

@@ -11,6 +11,7 @@ import HomePage from "./pages/HomePage/HomePage";
 import Catalog from "./pages/CatalogPage/Catalog";
 import Detail from './pages/DetailPage/Detail'
 import Yoxla from "./components/Product";
+import CategoryPills from "./components/CategoryPills";
 
 function App() {
   let { product, setProduct, setCategories } = useContext(allProductContext);
@@ -26,15 +27,15 @@ function App() {
       });
   },[product]);
 
-  useEffect(() => {
-    agent
-      .getByCategory()
-      .then((res) => {
-        setCategories(res);
-      })
-      .catch((err) => {
-      });
-  });
+  // useEffect(() => {
+  //   agent
+  //     .getByCategory()
+  //     .then((res) => {
+  //       setCategories(res);
+  //     })
+  //     .catch((err) => {
+  //     });
+  // });
   return (
     <>
       <Header />
@@ -43,8 +44,10 @@ function App() {
         <Route path="/catalog" element={<Catalog />} />
         <Route path="/product/:id" element={<Detail/>}/>
 
+
       </Routes>
       <Footer />
+      {/* <CategoryPills/> */}
     </>
   );
 }

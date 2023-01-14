@@ -127,6 +127,9 @@
     border: 1px solid #003F62;
     cursor: pointer;
 }
+.descriptionsNone{
+    display: none;
+}
 @media only screen and (max-width: 450px) {
   
 

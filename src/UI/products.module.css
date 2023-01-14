@@ -1,5 +1,5 @@
 .container{
-    padding: 30px;
+    padding: 30px 50px;
 
 }
 .bigdiv{
@@ -12,7 +12,7 @@
     width: 24%;
     border: 1px solid rgba(85, 83, 83, 0.525);
     border-radius: 20px;
-    padding: 10px;
+    padding: 10px 10px 30px 10px;
     transition: 0.5s;
 
 }
@@ -32,60 +32,121 @@
     height: 100%;
     object-fit: contain;
 }
-.miniDivImgBig button{
+.miniDivImgBig .favorite{
     width: 40px;
     height: 40px;
     border-radius: 100%;
-    background-color: #B3D4E5;
-    border: 1px solid #B3D4E5;
+    background-color: #245a75;
+    border: 1px solid #245a75;
     color: white;
     position: absolute;
     top: 10px;
     right: 10px;
+    opacity: 0;
+    cursor: pointer;
+    transition: 0.3s;
 }
-.miniDivText{
-    height: 150px;
+.miniDivImgBig .basket{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #245a75;
+    border: 1px solid #245a75;
+    color: white;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    opacity: 0;
+    transition: 0.8s;
+    cursor: pointer;
 }
-.miniDivHover{
-    height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-   transition: 0.5s;
-    display: none;
+.minidiv :hover .basket,
+.minidiv :hover .favorite
+{
+    opacity: 1;
+}
+.minidivFilter{
+    width: 32%;
+    border: 1px solid rgba(85, 83, 83, 0.525);
+    border-radius: 20px;
+    padding: 10px 10px 30px 10px;
+    transition: 0.5s;
 
 }
-.miniDivBtn1{
-    padding: 10px 70px;
-    background-color: #B3D4E5;
-    color: white;
-    border: 1px solid #B3D4E5;
-    border-radius: 30px;
+.minidivFilter :hover .basket,
+.minidivFilter :hover .favorite
+{
+    opacity: 1;
 }
-.miniDivBtn2{
-    width: 60px;
-    height: 40px;
-    border-radius: 30px;
-    background-color: #B3D4E5;
-    border: 1px solid #B3D4E5;
-    margin-left: 10px;
-}
-.minidiv:hover .miniDivHover{
-    display: block;
-}
-.minidiv:hover .miniDivText{
-    display: none;
-}
+
 .filterBigDiv{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 0px;
 }
-.filterBtns button{
+.filterBtns ul li{
     padding: 10px 30px;
-    margin: 0px 10px;
+    margin: 0px 5px;
     border-radius: 20px;
     border: 1px solid rgba(128, 128, 128, 0.496);
     background-color: white;
+    cursor: pointer;
+    transition: 0.5s;
 }
+
+@media only screen and (max-width: 450px) {
+  
+
+}
+
+@media only screen  and (max-width: 600px) {
+    .container{
+        padding: 30px 10px;
+    }
+  
+    .minidiv{
+        width: 100%;
+      }
+      .filterBigDiv{
+        flex-direction: column;
+      }
+      .filterBtns ul li{
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 600px)and (max-width: 768px) {
+    .container{
+        padding: 30px 10px;
+    }
+    .minidiv{
+        width: 49%;
+      }
+      .filterBigDiv{
+        flex-direction: column;
+      }
+      .filterBtns ul li{
+        padding: 10px 15px;
+        font-size: 13px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .minidiv{
+        width: 33%;
+      }
+      .filterBigDiv h3{
+        font-size: 12px;
+      }
+      .filterBtns ul li{
+        padding: 10px 15px;
+        font-size: 13px;
+    }
+
+}
+
+
+   
