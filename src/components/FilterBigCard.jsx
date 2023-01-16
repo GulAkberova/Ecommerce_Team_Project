@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import catalog from '../UI/catalog.module.css'
 import { Link } from "react-router-dom";
 import products from "../UI/products.module.css"
@@ -25,6 +25,11 @@ function FilterBigCard() {
       }
     });
   };
+  // console.log(favorite);
+  useEffect(() => {
+     console.log(favorite);
+  }, [favorite])
+  
   return (
     <>
     <div className={catalog.cardBigDiv}>

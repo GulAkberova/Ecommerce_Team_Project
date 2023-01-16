@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import '../../../UI/navbar.css'
 import BrowseCategories from '../Navbar/BrowseCategories'
 import vector from '../../../assets/icon/header/Vector.svg'
 import { NavLink } from 'react-router-dom'
+import { allProductContext } from '../../../context/allProductContext'
 
 function Navbar() {
+  let { favorite, setFavorite } = useContext(allProductContext)
+
   return (
     <div className='navbarBox'>
       <div className='navbarBoxLeft'>
@@ -19,7 +22,7 @@ function Navbar() {
           <li>Pages &nbsp;
           <img src={vector}/>
           </li>
-          <li><NavLink to={"/favorite"}>Favorite</NavLink></li>
+          <li><NavLink to={"/favorite"}>Favorite{favorite.length}</NavLink></li>
           <li>About us</li>
         </ul>
       </div>

@@ -149,4 +149,16 @@
 }
 
 
-   
+.clear{
+    padding: 8px 20px;
+    margin-left: 30px;
+    margin-top: 20px;
+    background-color: #245a75;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.clear:hover{
+    background-color: white;
+    color: #245a75;
+}
