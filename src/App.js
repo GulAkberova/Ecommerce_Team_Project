@@ -44,10 +44,6 @@ function App() {
         <Route path="/catalog" element={<Catalog />} />
         <Route path="/product/:id" element={<Detail/>}/>
         <Route path="/favorite" element={<Favorite/>}></Route>
-=======
-        <Route path="/product" element={<Catalog />} />
-        <Route path="/product/:id" element={<Detail />} />
->>>>>>> Zeyneb
       </Routes>
       <Footer />
       {/* <CategoryPills/> */}
