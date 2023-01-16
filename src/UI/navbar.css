@@ -23,6 +23,9 @@ ul{
     justify-content: space-between;
     list-style: none;
 }
+ul > li{
+    padding: 10px;
+}
 ul > img{
     padding:0 15px;
 }

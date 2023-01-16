@@ -6,7 +6,7 @@ import { Route, Routes } from "react-router-dom";
 import agent from "./api/agent";
 import Header from "./layouts/header/Header";
 import Footer from "./layouts/footer/Footer";
-import { Details, RouterSharp } from "@mui/icons-material";
+import { Details, Favorite, RouterSharp } from "@mui/icons-material";
 import HomePage from "./pages/HomePage/HomePage";
 import Catalog from "./pages/CatalogPage/Catalog";
 import Detail from './pages/DetailPage/Detail'
@@ -43,8 +43,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/catalog" element={<Catalog />} />
         <Route path="/product/:id" element={<Detail/>}/>
-
-
+        <Route path="/favorite" element={<Favorite/>}></Route>
       </Routes>
       <Footer />
       {/* <CategoryPills/> */}

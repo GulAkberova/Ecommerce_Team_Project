@@ -11,13 +11,16 @@ function Navbar() {
       <BrowseCategories/>
       <div className='navbarCategories'>
         <ul>
-          <li><NavLink to={"/"}>Home</NavLink></li>
+          <li><NavLink to={"/"}>Home &nbsp;
+          <img src={vector}/></NavLink></li>
+          <li><NavLink to={"/catalog"}>Catalog &nbsp;
           <img src={vector}/>
-          <li><NavLink to={"/catalog"}>Catalog</NavLink></li>
-          <img src={vector}/>
+          </NavLink></li>
           <li>Blog</li>
-          <li>Pages</li>
+          <li>Pages &nbsp;
           <img src={vector}/>
+          </li>
+          <li><NavLink to={"/favorite"}>Favorite</NavLink></li>
           <li>About us</li>
         </ul>
       </div>
