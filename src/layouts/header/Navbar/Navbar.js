@@ -13,7 +13,7 @@ function Navbar() {
         <ul>
           <li><NavLink to={"/"}>Home</NavLink></li>
           <img src={vector}/>
-          <li><NavLink to={"/catalog"}>Catalog</NavLink></li>
+          <li><NavLink to={"/product"}>Catalog</NavLink></li>
           <img src={vector}/>
           <li>Blog</li>
           <li>Pages</li>

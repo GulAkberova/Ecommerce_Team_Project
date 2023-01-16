@@ -10,11 +10,20 @@ import ReactStars from "react-rating-stars-component";
 
 
 function FilterBigCard() {
-  let {product,selectedCategories} = useContext(allProductContext);
+  let {product,selectedCategories,favorite,setFavorite} = useContext(allProductContext);
 
   const [style, setStyle] = useState("");
   const ratingChanged = (newRating) => {
     // console.log(newRating);
+  };
+  const handleFavorite = (index) => {
+    setFavorite(() => {
+      if (favorite.includes(index)) {
+        return favorite.filter((q) => q !== index);
+      } else {
+        return [...favorite, index];
+      }
+    });
   };
   return (
     <>
@@ -26,9 +35,13 @@ function FilterBigCard() {
                 <div key={item.id} className={products.minidivFilter}>
                <div className={products.miniDivImgBig}>
                <div className={products.miniDivImg}>
-                    <Link to={`product/${item.id}`}><img src={item.image}/></Link>
+                    <Link to={`/product/${item.id}`}><img src={item.image}/></Link>
                 </div>
-                <button className={products.favorite}><i class="fa-regular fa-heart"></i></button>
+                <button className={products.favorite} onClick={()=>handleFavorite(item)}><i  className={
+                              favorite.includes(item)
+                                ? "fa-solid fa-heart"
+                                : "fa-regular fa-heart"
+                            }></i></button>
                 <button className={products.basket}><i class="fa-solid fa-basket-shopping"></i></button>
                
                </div>
