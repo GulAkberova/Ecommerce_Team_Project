@@ -9,7 +9,7 @@ import Footer from "./layouts/footer/Footer";
 import { Details, Favorite, RouterSharp } from "@mui/icons-material";
 import HomePage from "./pages/HomePage/HomePage";
 import Catalog from "./pages/CatalogPage/Catalog";
-import Detail from './pages/DetailPage/Detail'
+import Detail from "./pages/DetailPage/Detail";
 import Yoxla from "./components/Product";
 import CategoryPills from "./components/CategoryPills";
 
@@ -44,6 +44,10 @@ function App() {
         <Route path="/catalog" element={<Catalog />} />
         <Route path="/product/:id" element={<Detail/>}/>
         <Route path="/favorite" element={<Favorite/>}></Route>
+=======
+        <Route path="/product" element={<Catalog />} />
+        <Route path="/product/:id" element={<Detail />} />
+>>>>>>> Zeyneb
       </Routes>
       <Footer />
       {/* <CategoryPills/> */}
