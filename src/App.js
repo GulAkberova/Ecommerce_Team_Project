@@ -41,9 +41,9 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/catalog" element={<Catalog />} />
+        <Route path="/product" element={<Catalog />} />
         <Route path="/product/:id" element={<Detail/>}/>
-        <Route path="/favorite" element={<Favorite/>}></Route>
+        <Route path="/favorite" element={<Favorite/>}/>
       </Routes>
       <Footer />
       {/* <CategoryPills/> */}
