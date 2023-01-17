@@ -34,7 +34,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/product" element={<Catalog />} />
         <Route path="/product/:id" element={<Detail/>}/>
-        <Route path="/favorite" element={<FavoritePage/>}/>
+        <Route path="/favorite" element={<Favorite/>}></Route>
       </Routes>
       <Footer />
     </>
