@@ -18,7 +18,7 @@ function Product() {
     const handleFavorite = (index) => {
       setFavorite(() => {
         if (favorite.includes(index)) {
-          return favorite.filter((q) => q !== index);
+          return favorite.find((q) => q.id !== index.id);
         } else {
           return [...favorite, index];
         }
