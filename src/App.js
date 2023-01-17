@@ -25,7 +25,7 @@ function App() {
       .catch((err) => {
         console.log(err);
       });
-  },[product]);
+  }, [product]);
 
   return (
     <>
@@ -33,8 +33,8 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/product" element={<Catalog />} />
-        <Route path="/product/:id" element={<Detail/>}/>
-        <Route path="/favorite" element={<Favorite/>}></Route>
+        <Route path="/product/:id" element={<Detail />} />
+        <Route path="/favorite" element={<FavoritePage />}></Route>
       </Routes>
       <Footer />
     </>
