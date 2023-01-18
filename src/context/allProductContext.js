@@ -5,10 +5,10 @@ export const allProductContext = createContext(null);
 export const AllProductProvider = ({ children }) => {
   const [product, setProduct] = useState([]);
   const [categories, setCategories] = useState([]);
-  const [productData,setProductData]=useState([])
+  const [productData, setProductData] = useState([]);
   const [favorite, setFavorite] = useState([]);
-  
-  const [selectedCategories, setSelectedCategories] = useState("electronics");
+
+  const [selectedCategories, setSelectedCategories] = useState([]);
   const values = {
     product,
     setProduct,
